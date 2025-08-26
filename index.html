@@ -25,12 +25,12 @@
             </div>
             <div class="flex gap-3 justify-center">
                 <button
-                    class="bg-[#41ff6b1a] rounded-full flex w-20 justify-center items-center gap-3 font-bold"><span>0</span><img
+                    class="bg-[#41ff6b1a] rounded-full flex w-20 justify-center items-center gap-3 font-bold"><span id="heart-count">0</span><img
                         src="./assets/heart.png" alt="" class="w-6 h-fit"></button>
                 <button
                     class="bg-[#41ff6b1a] rounded-full flex w-20 justify-center items-center gap-3 font-bold"><span>100</span><img
                         src="./assets/coin.png" alt="" class="w-6 h-fit"></button>
-                <button class="text-white font-medium w-20 h-auto bg-[#00A63E] rounded-full"><span></span> Copy</button>
+                <button class="text-white font-medium w-20 h-auto bg-[#00A63E] rounded-full"><span id="copy-count" class="hidden">0</span> Copy</button>
             </div>
         </nav>
         <section
@@ -43,7 +43,7 @@
     </header>
 
     <main class="md:w-11/12 mx-auto grid md:grid-cols-12 gap-8 my-10">
-        <section class="border-2 border-red-400 md:col-span-9 ">
+        <section id="cards" class="border-2 border-red-400 md:col-span-9 ">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="bg-white p-5 shadow-xl rounded-xl">
                     <div class="flex justify-between">
@@ -80,7 +80,7 @@
                     </div>
                     <h1 class="font-bold">National Emergency Number</h1>
                     <p>National Emergency</p>
-                    <h1 class="text-4xl font-bold mt-3">999</h1>
+                    <h1 class="text-4xl font-bold mt-3">111</h1>
                     <button class="btn rounded-full">All</button>
                     <div class="mt-4 flex gap-3">
                         <button class="btn border-gray-300 w-28 hover:bg-slate-950 hover:text-white btn-copy"><span><i
