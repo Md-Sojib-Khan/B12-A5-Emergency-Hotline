@@ -5,10 +5,9 @@ difference between getElementById and getElementsByClassName
 2.ID return single element or null but Class return HTMLCollection (like array)
 3.Did't support multiple elements by ID but class support multiple elements
 
-What is the difference between querySelector and querySelectorAll
+the difference between querySelector and querySelectorAll
 1.QuerySelector selects the first element that matches a CSS selector but querySelectorAll Selects all elements that match a CSS selector.
 2.f no match querySelector Returns null querySelectorAll Returns empty NodeList
----
 
 **How do you create and insert a new element into the DOM?**
 1.Create the element using document.createElement() method
