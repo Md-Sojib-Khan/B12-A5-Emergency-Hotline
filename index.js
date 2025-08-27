@@ -37,7 +37,7 @@ for (const callBtn of callBtns) {
     callBtn.addEventListener('click', function () {
         const coinNumber = Number(document.getElementById('coin-number').innerHTML);
         if (coinNumber < 20) {
-            alert(`You do not have Sufficient coin`)
+            alert(`You do not have Sufficient coin, You need at least 20 coins to call`)
             return
         }
         alert(`📞Calling ${serviceName} ${serviceNumber}`)
@@ -92,3 +92,6 @@ for (const callBtn of callBtns) {
     })
 }
 
+document.getElementById("btn-clear").addEventListener('click', function(){
+    document.getElementById('dainamic-cards-section').innerHTML= "";
+})
