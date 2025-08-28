@@ -14,7 +14,7 @@ for (const copyBtn of copyBtns) {
             const userOk = confirm;
             const text = copyText;
             navigator.clipboard.writeText(text).then(() => {
-                alert(`Number is Coprd ${copyText}`)
+                alert(`Number is Copied ${copyText}`)
                 document.getElementById('copy-count').classList.remove('hidden')
                 const copyCount = Number(document.getElementById('copy-count').innerText);
                 document.getElementById('copy-count').innerText = copyCount + 1;
